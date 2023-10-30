@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.show-popup-girbaud {
+    display: flex;
+}
+
+.banner-popup-girbaud {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000061;
+    margin: 0;
+    z-index: 9999999999;
+}
+
+
+.banner-popup-girbaud-box {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-span-girbaud-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.banner-span-girbaud-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-popup-girbaud-exit {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.banner-popup-girbaud-exit img {
+    border: 1.5px solid #000;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.banner-span-girbaud-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.banner-span-girbaud-form-parte1-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-span-girbaud-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2F4A9C;
+}
+
+.input-popup-girbaud-label {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border: 1px solid #CFD2D4;
+    padding: 10px 10px;
+    position: relative;
+    margin-bottom: 12px;
+    transition: all .2s ease;
+}
+
+.input-popup-girbaud-label span {
+    color: #5E6366;
+    top: 8px;
+    left: 10px;
+    transition: all .2s ease;
+    font-size: 12px;
+}
+
+.input-popup-girbaud-label input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    height: 100%;
+    min-height: 14px;
+    font-size: 14px;
+}
+
+.input-popup-girbaud-label input::placeholder {
+    color: #ABAFB1;
+}
+
+.banner-span-girbaud-check {
+    display: flex; 
+    gap: 12px;
+    font-size: 12px;
+}
+
+.banner-span-girbaud-check a {
+    color: #000;
+}
+
+.banner-span-girbaud-btn {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 0;
+    border: 1px solid transparent;
+    background-color: #2D2C2F;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.banner-span-girbaud-btn:hover {
+    background-color: #FFF;
+    color: #2D2C2F;
+    border: 1px solid #2D2C2F;
+}
+
+.banner-popup-cancelar-1 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 12px;
+}
+
+.banner-span-girbaud-img {
+    display: none;
+}
+
+.banner-span-girbaud-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/***partee 2****/
+
+.banner-popup-girbaud-box-parte1 {
+    width: 80vw;
+}
+
+.banner-popup-girbaud-exit-parte1 {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.banner-popup-girbaud-box-parte1-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img-jean.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-popup-girbaud-box-parte1-text {
+    background-color: #FFF;
+    height: 100%;
+    width: 40%;
+    text-align: center;
+}
+
+.banner-popup-girbaud-box-parte1-contenido {
+    margin: 0 0 3rem 0;
+}
+
+.banner-span-girbaud-form-parte1-img {
+    margin-bottom: 1rem;
+}
+
+.banner-popup-parte1-off {
+    font-weight: bold;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    color: #2F4A9C;
+}
+
+.banner-popup-parte1-off-boton {
+    width: 80%;
+    margin: 0 auto;
+    margin: 1rem 0;
+    padding: 15px 0;
+    text-transform: uppercase;
+    border: 1.5px solid #000;
+    background-color: #2D2C2F;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.banner-popup-parte1-off-boton:hover {
+    background-color: #FFF;
+    color: #2D2C2F;
+}
+
+.banner-popup-parte1-cancelar {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+    .banner-popup-girbaud-box, .banner-popup-girbaud-box-parte1 {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-popup-girbaud-box, .banner-popup-girbaud-box-parte1 {
+        width: 100vw;
+    }
+    .banner-popup-girbaud {
+        height: 100%;
+    }
+    .banner-popup-gray {
+        width: 100%;
+        height: 4rem;
+        background-color: #2D2C2F;
+        margin-bottom: 20px;
+    }
+    .banner-span-girbaud-text {
+        margin-top: 0;
+    }
+    .banner-popup-cancelar-1 {
+        display: none;
+    }
+    .banner-popup-girbaud-exit img {
+        padding: 5px;
+        width: 20px;
+    }
+
+    /**parte 2**/
+    .banner-popup-girbaud-box-parte1-img {
+        background-image: none;
+    }
+
+    
+    .banner-popup-girbaud-box-parte1-text {
+        width: 100%;
+        height: auto;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .banner-popup-girbaud-box-parte1 {
+        position: absolute;
+        border-radius: 24px 24px 0 0;
+        bottom: 0;
+        background-color: #FFF;
+    }
+
+    .banner-popup-girbaud-exit-parte1 {
+        padding: 20px 20px 0 0;
+    }
+
+    .banner-popup-parte1-off {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .banner-popup-girbaud-logo-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner-span-girbaud-info {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px){
+    .banner-span-girbaud-box {
+        width: 100%;
+    }
+
+    .banner-span-girbaud-img {
+        display: block;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .banner-span-girbaud-text {
+        width: 50%;
+    }
+
+    .banner-span-girbaud-form {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+
+
+/***************animaciones*********/
+.mostrar-parte-2 {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+.banner-popup-girbaud-box {
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    opacity: 0;
+}

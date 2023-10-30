@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario primera compra</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <div class="banner-popup-girbaud show-popup-girbaud">
+    <!--1 parte-->
+    <div class="banner-popup-girbaud-box-parte1">
+      <div class="banner-popup-girbaud-box-parte1-img">
+        <div class="banner-popup-girbaud-box-parte1-text">
+          <div class="banner-popup-girbaud-exit banner-popup-girbaud-exit-parte1">
+            <img src="./assets/icono-cerrar.svg" alt="Icono cerrar">
+          </div>
+
+          <div class="banner-popup-girbaud-box-parte1-contenido">
+            <div class="banner-span-girbaud-form-parte1-img">
+              <img src="./assets/logo-nuevo-Girbaud.png" class="banner-popup-girbaud-logo-mobile" alt="logo girbaud" width="100">
+            </div>
+
+            <p class="banner-popup-titulo-parte1">¿Qué tal un</p>
+            <div class="banner-popup-parte1-off">
+              <p>15%</p>
+              <p>Off</p>
+            </div>
+            <p class="banner-popup-titulo-parte1">en tu primera compra?</p>
+            <button class="banner-popup-parte1-off-boton" id="mostrarParte2">¡Lo quiero!</button>
+            <p class="banner-popup-parte1-cancelar">No gracias</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--2 parte-->
+    <div class="banner-popup-girbaud-box" style="position: absolute;">
+      <div class="banner-span-girbaud-box">
+        <div class="banner-span-girbaud-img">
+          <img src="./assets/img-chaquetas.jpeg" alt="imagen Pop up">
+        </div>
+        <div class="banner-span-girbaud-text">
+          <div class="banner-popup-gray"></div>
+          <div class="banner-popup-girbaud-exit">
+            <img src="./assets/icono-cerrar.svg" alt="Icono cerrar">
+          </div>
+          <form class="banner-span-girbaud-form" id="form-primera-compra">
+            <div class="banner-span-girbaud-form-img">
+              <img src="./assets/logo-nuevo-Girbaud.png" alt="logo girbaud" width="100">
+            </div>
+            <div class="banner-span-girbaud-info">
+              <p>¡Inscríbete y obtén un 15% de descuento en tu primera compra!</p>
+            </div>
+            <label class="input-popup-girbaud-label">
+              <span>Nombres</span>
+              <input type="text" class="input-popup-girbaud" required="" id="name"
+                placeholder="ingresa tus nombres y apellidos ">
+            </label>
+            <label class="input-popup-girbaud-label">
+              <span>Correo eletrónico</span>
+              <input type="text" class="input-popup-girbaud" required="" id="email"
+                placeholder="Ingresa tu dirección de correo electrónico">
+            </label>
+            <label class="input-popup-girbaud-label">
+              <span>Número de celular</span>
+              <input type="text" class="input-popup-girbaud" required="" id="phone" placeholder="3242342233">
+            </label>
+            <label class="input-popup-girbaud-label">
+              <span style="background-color: white;">Ingresa tu fecha de nacimiento</span>
+              <input type="date" class="input-popup-girbaud" required="" id="date">
+            </label>
+            <div class="banner-span-girbaud-politic-data">
+              <div class="banner-span-girbaud-check">
+                <input type="checkbox" required="Debes aceptar la politica de tratamiento de datos" id="terms">
+                <span>Acepto <a href="/terminos-y-condiciones">Política de datos</a> y <a
+                    href="/promociones-vigentes">términos y condiciones</a></span>
+              </div>
+              <div id="messageDos"></div>
+              <div id="message"></div>
+              <button type="submit" class="banner-span-girbaud-btn">Inscribirme</button>
+              <p class="banner-popup-cancelar-1">No, gracias.cerrar</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
