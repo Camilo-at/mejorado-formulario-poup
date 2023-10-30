@@ -197,6 +197,7 @@ img {
     background-image: url(./assets/img-jean.jpeg);
     background-position: center;
     background-size: cover;
+    padding: 20px;
 }
 
 .banner-popup-girbaud-box-parte1-text {
