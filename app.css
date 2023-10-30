@@ -266,6 +266,7 @@ img {
     }
     .banner-span-girbaud-text {
         margin-top: 0;
+        display: block;
     }
     .banner-popup-cancelar-1 {
         display: none;
